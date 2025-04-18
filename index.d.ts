@@ -2,7 +2,7 @@
 
 import { Context, Span, TextMapGetter, TextMapSetter, Tracer } from '@opentelemetry/api'
 import { InstrumentationBase, InstrumentationConfig, InstrumentationNodeModuleDefinition } from '@opentelemetry/instrumentation'
-import { FastifyPluginCallback } from 'fastify'
+import type { FastifyPluginCallback } from 'fastify'
 
 export interface FastifyOtelOptions {}
 export interface FastifyOtelInstrumentationOpts extends InstrumentationConfig {
